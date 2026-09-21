@@ -1,0 +1,28 @@
+import display
+import switch
+import motor
+from time import sleep
+
+def SW1PressCB(_=None):
+
+  display.fill(0)
+  display.text(str('Foward'), 0, 0, 1)
+  display.show()
+  motor.wheel(20, 20)
+  sleep(5)
+  motor.stop()
+  display.fill(0)
+  display.text(str('Backward'), 0, 0, 1)
+  display.show()
+  motor.wheel((-20), (-20))
+  sleep(5)
+  motor.stop()
+  display.fill(0)
+  display.text(str('Sw1'), 0, 0, 1)
+  display.show()
+
+
+display.fill(0)
+display.text(str('Sw1'), 0, 0, 1)
+display.show()
+switch.pressed(switch.SW1, SW1PressCB)
