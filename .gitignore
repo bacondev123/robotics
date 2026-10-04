@@ -6,3 +6,5 @@ build/
 *.hex
 *.elf
 *.o
+libraries/
+KidMotor V4i/
