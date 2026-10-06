@@ -22,8 +22,6 @@ void setup() {
   oled.text(0, 0, "RUN..");
   oled.show();
 
-
-  oled.clear()aafa sf as fas
   // Motor_tuning(20 + MOTOR_BIAS ,20);
   Experiment();
 
